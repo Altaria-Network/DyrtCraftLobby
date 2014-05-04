@@ -10,7 +10,7 @@ import org.bukkit.inventory.meta.ItemMeta;
 
 public class Kit {
 	
-	public static ItemStack witamyBook() {
+	/*public static ItemStack witamyBook() {
 		ItemStack a = new ItemStack(Material.WRITTEN_BOOK, 1);
 		BookMeta aMeta = (BookMeta) a.getItemMeta();
 		aMeta.setDisplayName(ChatColor.GOLD + "" + ChatColor.BOLD + "Witamy");
@@ -44,9 +44,9 @@ public class Kit {
 				);
 		a.setItemMeta(aMeta);
 		return a;
-	}
+	}*/
 	
-	public static ItemStack zakupBook() {
+	/*public static ItemStack zakupBook() {
 		ItemStack a = new ItemStack(Material.WRITTEN_BOOK, 1);
 		BookMeta aMeta = (BookMeta) a.getItemMeta();
 		aMeta.setDisplayName(ChatColor.GOLD + "" + ChatColor.BOLD + "Zakup rang");
@@ -71,21 +71,21 @@ public class Kit {
 				);
 		a.setItemMeta(aMeta);
 		return a;
-	}
+	}*/
 	
-	public static ItemStack sklep() {
+	/*public static ItemStack sklep() {
 		ItemStack a = new ItemStack(Material.EMERALD, 1);
 		ItemMeta aMeta = a.getItemMeta();
 		aMeta.setDisplayName(ChatColor.GOLD + "" + ChatColor.BOLD + "Sklep DyrtCraft Network");
 		a.setItemMeta(aMeta);
 		return a;
-	}
+	}*/
 	
 	public static void sendKit(Player player) {
 		Inventory inv = player.getInventory();
-		inv.setItem(1, Kit.witamyBook());
-		inv.setItem(2, Kit.zakupBook());
-		inv.setItem(8, Kit.sklep());
+		//inv.setItem(1, Kit.witamyBook());
+		//inv.setItem(2, Kit.zakupBook());
+		//inv.setItem(8, Kit.sklep());
 	}
 	
 }

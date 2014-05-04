@@ -21,15 +21,20 @@ public class PlayerMoveListener implements Listener {
 	public void onPlayerMove(PlayerMoveEvent e) {
 		if(e.getPlayer().isOp() && DCLobby.getSettings().getValue(Setting.PROTECT) == false) { return; }
 		
-		if(e.getTo().getBlockY() < 60 || e.getTo().getBlockY() > 90) {
+		if(e.getPlayer().isFlying()) {
+			e.getPlayer().setFlying(false);
+			e.getPlayer().setAllowFlight(true);
+		}
+		
+		if(e.getTo().getBlockY() < 84 || e.getTo().getBlockY() > 120) {
 			e.getPlayer().playSound(e.getPlayer().getLocation(), Sound.ENDERMAN_TELEPORT, 10, 1);
 			DCLobby.getPlayer(e.getPlayer()).reset();
 		}
-		if(e.getTo().getBlockX() < -40 || e.getTo().getBlockX() > 40) {
+		else if(e.getTo().getBlockX() < -82 || e.getTo().getBlockX() > -2) {
 			e.getPlayer().playSound(e.getPlayer().getLocation(), Sound.ENDERMAN_TELEPORT, 10, 1);
 			DCLobby.getPlayer(e.getPlayer()).reset();
 		}
-		if(e.getTo().getBlockZ() < -40 || e.getTo().getBlockZ() > 40) {
+		else if(e.getTo().getBlockZ() < -81 || e.getTo().getBlockZ() > -1) {
 			e.getPlayer().playSound(e.getPlayer().getLocation(), Sound.ENDERMAN_TELEPORT, 10, 1);
 			DCLobby.getPlayer(e.getPlayer()).reset();
 		}

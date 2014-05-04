@@ -23,7 +23,8 @@ public class PlayerKickListener implements Listener {
 	
 	@EventHandler
 	public void onPlayerKick(PlayerKickEvent e) {
-		e.setLeaveMessage("§f<> §a" + e.getPlayer().getName() + " §awyszedl z Lobby§f <>");
+		//e.setLeaveMessage("§f<> §a" + e.getPlayer().getName() + " §awyszedl z Lobby§f <>");
+		e.setLeaveMessage("");
 		
 		Firework fw = (Firework) e.getPlayer().getWorld().spawn(e.getPlayer().getLocation(), Firework.class);
 		

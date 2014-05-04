@@ -16,7 +16,7 @@ public class Lang {
 		String b = ChatColor.DARK_RED + "Twój nick (" + nickname + ") jest zablokowany!\n";
 		String c = ChatColor.DARK_RED + "Nie podszywaj sie pod znane osoby!\n";
 		String d = ChatColor.GOLD + "= = = = = = = = = = = = = = = = = = = = = = = = = =\n";
-		String e = ChatColor.BLUE + "To Ty? Zglos sie na TeamSpeak 3 " + ChatColor.ITALIC + "dyrtcraft.pl";
+		String e = ChatColor.BLUE + "To Ty? Zglos sie na TeamSpeak 3 " + ChatColor.ITALIC + "ts.altariamc.eu";
 		return a + b + c + d + e;
 	}
 	
@@ -51,7 +51,7 @@ public class Lang {
 		String b = ChatColor.DARK_RED + "Twój nick w grze (" + nickname + ") jest za dlugi!\n";
 		String c = ChatColor.DARK_RED + "Uzyj krótszego nicku!\n";
 		String d = ChatColor.GOLD + "= = = = = = = = = = = = = = = = = = = = = = = = = =\n";
-		String e = ChatColor.DARK_GREEN + "" + ChatColor.BOLD + "\nDyrtCraft Network";
+		String e = ChatColor.DARK_GREEN + "" + ChatColor.BOLD + "\nAltaria Network";
 		return a + b + c + d + e;
 	}
 	
@@ -66,7 +66,7 @@ public class Lang {
 		String b = ChatColor.DARK_RED + "Obecnie trwaja prace techniczne na serwerowni!\n";
 		String c = ChatColor.DARK_RED + "Wróc pózniej!\n";
 		String d = ChatColor.GOLD + "= = = = = = = = = = = = = = = = = = = = = = = = = =\n";
-		String e = ChatColor.DARK_GREEN + "" + ChatColor.BOLD + "\nDyrtCraft Network";
+		String e = ChatColor.DARK_GREEN + "" + ChatColor.BOLD + "\nAltaria Network";
 		return a + b + c + d + e;
 	}
 	
